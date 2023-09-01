@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- LOGIN -->
+    <div class="login">
+        <form class="login-form">
+            <h1 class="login-title">Gİriş Yap</h1>
+            <div class="login-form-group">
+                <label for="username">Kullanıcı Adı:</label>
+                <input type="text" id="username" name="username">
+                <p id="error-username" class="errorInput">Lütfen kullanıcı adı giriniz.</p><!-- BOŞ ise yazacak olan hata kodu -->
+            </div>
+            <div class="login-form-group">
+                <label for="password">Şifre:</label>
+                <input type="password" id="password" name="password">
+                <p id="error-password" class="errorInput">Lütfen şifrenizi giriniz.</p>
+                <p id="error-user" class="errorInput">Kullanıcı adı veya Şifre hatalı</p>
+            </div>
+            <div class="login-form-button">
+                <button type="submit" class="btn-login">Giriş</button>
+                <button type="button" class="btn-register">Kayıt Ol</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="js/login.js"></script>
+</body>
+</html>

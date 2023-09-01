@@ -1,0 +1,48 @@
+@mixin tablet {
+  @media (min-width: 600px) and (max-width: 830px) {
+    //Ornek still ozellikleri icin
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 599px) {
+    @content; //çağırdım yerde değişkenleri yazmak için
+  }
+}
+
+@mixin sayac {
+  position: absolute;
+  right: -46px;
+  top: -12px;
+  padding: 1px 3px;
+  background-color: rgb(200, 27, 27);
+  color: white;
+  border-radius: 7px;
+  font-weight: 500;
+}
+
+@mixin btn-hover {
+  &:hover {
+    transform: scale(1.1);
+    transition: ease 0.7s;
+    cursor: pointer;
+  }
+}
+
+
+.ozel-btn{//filtrele butonu
+  width: 100%;
+  border: 0;
+  background-color: black;
+  color: white;
+  border-radius:  0 0 10px 10px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 0;
+  &:hover{
+    cursor: pointer;
+    color: gray;
+    transition: ease .3s;
+  }
+}
